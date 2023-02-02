@@ -117,7 +117,7 @@ async function mostSelledProducts(){
         produtos.push({produto: compare, quantidade: count})
     }
 
-    // produtos.sort()
+    produtos.sort((a,b)=>{ return b.quantidade - a.quantidade})
 
     return produtos
 }
